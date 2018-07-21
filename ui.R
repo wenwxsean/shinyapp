@@ -28,6 +28,7 @@ shinyUI(fluidPage(
     
     # Show a plot with diamonds and regression line
     mainPanel(
+      h3("Here you may try prediciting wages using age for different education levels and jobclasses. First select the age and then followed by education and/or jobclass. Go on, Give it a try!"),
       plotOutput("distPlot"),
       h4("Predicted value of wage is:"),
       h3(textOutput("result"))
