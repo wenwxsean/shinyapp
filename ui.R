@@ -14,16 +14,16 @@ shinyUI(fluidPage(
       numericInput("age", label = h4("Age"), step = 1, value = 18),
       selectInput("education", label = h4("Education"), 
                   choices = list("Unknown" = "*",
-                                 "Less than high school graduate" = "^1*",
-                                 "High school graduate" = "^2*",
-                                 "Some college" = "^3*",
-                                 "College graduate" = "^4*",
-                                 "Advanced degree" = "^5*"
+                                 "Less than high school graduate" = "^1",
+                                 "High school graduate" = "^2",
+                                 "Some college" = "^3",
+                                 "College graduate" = "^4",
+                                 "Advanced degree" = "^5"
                   )),
       selectInput("jobclass", label=h4("Jobclass"),
                   choices = list("Unknown" = "*",
-                                 "Industrial" = "^1*",
-                                 "Information" = "^2*"))
+                                 "Industrial" = "^1",
+                                 "Information" = "^2"))
     ),
     
     # Show a plot with diamonds and regression line
